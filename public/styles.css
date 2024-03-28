@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+    url("https://cdn.discordapp.com/attachments/1117557234461847723/1222323423598874714/dusiadraws_heaven_and_hell_merging_together_blue_sky_white_clou_2555ed88-a6e4-472c-af27-c972f1af6e88.png?ex=6615cc65&is=66035765&hm=f7311a081bf0c758e02ef5cca786122e086c22ac778a824bc7d935ad87ac63c2&");
+  background-size: cover;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-position: center;
+  color: #35e0ff;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Russo One", sans-serif;
+  font-weight: 100;
+}
+
+.solanaLogo {
+  margin-top: 2em;
+  width: 1.5em;
+  height: 1.6em;
+}
+
+.header {
+  background-color: transparent;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(246, 246, 246, 0.9);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #876cff;
+}
+
+a:hover {
+  color: bisque;
+}
+
+button {
+  margin: 1em 0 0 1em;
+}
+
+.bodyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageBody {
+  width: 70%;
+  /* height: 40vh; */
+  background-color: linear-gradient(
+    135deg,
+    rgba(225, 225, 225, 0.1),
+    rgba(225, 225, 225, 0)
+  );
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
+  border-radius: 10%;
+}
+
+.pageBody details {
+}
+
+.pageBody2 {
+  width: 70%;
+  margin: 1rem;
+  background-color: linear-gradient(
+    135deg,
+    rgba(225, 225, 225, 0.1),
+    rgba(225, 225, 225, 0)
+  );
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
+  border-radius: 10%;
+}
+
+.pageBody button {
+  width: 65%;
+  height: 3rem;
+  background-color: #14f195;
+  font-family: "Russo One", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #876cff;
+  margin-bottom: 0.8em;
+}
+
+.pageBody button:hover {
+  background-color: #876cff;
+  color: #14f195;
+  cursor: pointer;
+}
+
+.pageTitle {
+  font-size: 2.3em;
+}
+
+.pagesubtitle {
+  color: white;
+  font-size: 1.3em;
+  font-family: "Russo One", sans-serif;
+}
+
+.logo {
+  width: 7em;
+  height: 2.8em;
+}
+
+.gif {
+  width: 30rem;
+  height: 30rem;
+  /* box-shadow: 0px 0 100px 0 rgba(246, 246, 246, 0.9); */
+  border-radius: 60%;
+}
+
+.backgroundCircle {
+  fill: none;
+  stroke: #ddd;
+}
+
+.progressCircle {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tokenPrice {
+  color: whitesmoke;
+}
+
+.circleText {
+  font-size: 3rem;
+}
+
+.progressInput {
+  width: 30vw;
+  height: 3rem;
+  margin-top: 0.5rem;
+}
+
+svg {
+  width: 30vw;
+}
+
+.countdownContainer {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.countdownContainer div {
+  flex-basis: 20em;
+}
+
+.countdownContainer p {
+  font-size: 2rem;
+  margin: 1rem;
+}
