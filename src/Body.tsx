@@ -19,7 +19,7 @@ function Body() {
           <h3 className="details">Details</h3>
         </div>
         <div className="pageBody2">
-          <h2>Solvenmoics</h2>
+          <h2>Solvenomics</h2>
         </div>
       </div>
     </div>
