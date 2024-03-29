@@ -2,6 +2,7 @@ import React from 'react';
 import ProgressCircle from './ProgressBar';
 import Gif from './Gif';
 import Timer from './Timer';
+import PieChart from './PieChart'
 
 function Body() {
   return (
@@ -20,6 +21,7 @@ function Body() {
         </div>
         <div className="pageBody2">
           <h2>Solvenomics</h2>
+          <PieChart />
         </div>
       </div>
     </div>
