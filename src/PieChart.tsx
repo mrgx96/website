@@ -14,14 +14,36 @@ function PieChart() {
       chartInstance.current = new Chart(myChartRef, {
         type: 'doughnut',
         data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green'],
+          labels: ['Presale', 'Development', 'Marketing', 'Community'],
           datasets: [
             {
-              data: [30, 45, 25, 10],
-              backgroundColor: ['rgb(153, 69, 255)', 'rgb(20, 241, 149)', 'rgb(255, 205, 86)', 'rgb(75, 192, 192)'],
+              data: [70, 10, 10, 10],
+              backgroundColor: ['rgb(153, 69, 255)', '#14F195', 'rgb(255, 205, 86)', '#4c366c'],
             },
           ],
         },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins:{
+                legend:{
+                    position:'bottom',
+                    labels:{
+                        color:'#35e0ff',
+
+                        font:{
+                            size:25
+                        },
+
+                        padding:40,
+                    },
+
+                    
+                }
+            }
+        }
+
       });
     }
     return () => {
@@ -32,7 +54,7 @@ function PieChart() {
   }, []);
 
   return (
-    <div style={{ width: '400px', height: '400px' }}>
+    <div style={{ width: '50vw', height: '50vh'  }}>
       <canvas ref={chartRef} />
     </div>
   );

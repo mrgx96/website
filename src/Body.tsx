@@ -21,6 +21,7 @@ function Body() {
         </div>
         <div className="pageBody2">
           <h2>Solvenomics</h2>
+          <h3>Total Supply: 3,333,333,333</h3>
           <PieChart />
         </div>
       </div>
