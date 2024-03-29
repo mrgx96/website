@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-    url("https://cdn.discordapp.com/attachments/1117557234461847723/1222323423598874714/dusiadraws_heaven_and_hell_merging_together_blue_sky_white_clou_2555ed88-a6e4-472c-af27-c972f1af6e88.png?ex=6615cc65&is=66035765&hm=f7311a081bf0c758e02ef5cca786122e086c22ac778a824bc7d935ad87ac63c2&");
+    url('https://cdn.discordapp.com/attachments/1117557234461847723/1222323423598874714/dusiadraws_heaven_and_hell_merging_together_blue_sky_white_clou_2555ed88-a6e4-472c-af27-c972f1af6e88.png?ex=6615cc65&is=66035765&hm=f7311a081bf0c758e02ef5cca786122e086c22ac778a824bc7d935ad87ac63c2&');
   background-size: cover;
   background-repeat: none;
   background-attachment: fixed;
   background-position: center;
   color: #35e0ff;
-  font-family: "Russo One", sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-size: 1.4rem;
   font-weight: 100;
   margin: 0;
@@ -22,7 +22,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  font-family: "Russo One", sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-weight: 100;
 }
 
@@ -69,11 +69,7 @@ button {
 .pageBody {
   width: 70%;
   /* height: 40vh; */
-  background-color: linear-gradient(
-    135deg,
-    rgba(225, 225, 225, 0.1),
-    rgba(225, 225, 225, 0)
-  );
+  background-color: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0));
   backdrop-filter: blur(8px);
   box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
   border-radius: 10%;
@@ -85,11 +81,7 @@ button {
 .pageBody2 {
   width: 70%;
   margin: 1rem;
-  background-color: linear-gradient(
-    135deg,
-    rgba(225, 225, 225, 0.1),
-    rgba(225, 225, 225, 0)
-  );
+  background-color: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0));
   backdrop-filter: blur(8px);
   box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
   border-radius: 10%;
@@ -99,7 +91,7 @@ button {
   width: 65%;
   height: 3rem;
   background-color: #14f195;
-  font-family: "Russo One", sans-serif;
+  font-family: 'Russo One', sans-serif;
   font-weight: 100;
   font-size: 2rem;
   color: #876cff;
@@ -119,7 +111,7 @@ button {
 .pagesubtitle {
   color: white;
   font-size: 1.3em;
-  font-family: "Russo One", sans-serif;
+  font-family: 'Russo One', sans-serif;
 }
 
 .logo {
