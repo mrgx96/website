@@ -1,5 +1,4 @@
-import '../public/styles.css';
-import Container from './Container';
+import './styles.css';
 import Header from './Header';
 import Body from './Body';
 import React from 'react';
