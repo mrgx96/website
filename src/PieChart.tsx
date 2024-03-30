@@ -39,7 +39,7 @@ function PieChart() {
                     return size < 12 ? 12 : size
                 },
               },
-                padding: 40,
+                padding: 60,
               },
             },
           },
