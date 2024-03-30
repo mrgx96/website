@@ -2,7 +2,7 @@ import React from 'react';
 import ProgressCircle from './ProgressBar';
 import Gif from './Gif';
 import Timer from './Timer';
-import PieChart from './PieChart'
+import PieChart from './PieChart';
 
 function Body() {
   return (

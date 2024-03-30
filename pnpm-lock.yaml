@@ -5,11 +5,14 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  chart.js:
+    specifier: ^4.4.2
+    version: 4.4.2
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
   react:
-    specifier: ^18.0.0
+    specifier: ^18.2.0
     version: 18.2.0
   react-dom:
     specifier: ^18.0.0
@@ -547,6 +550,11 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
+  /@kurkle/color@0.3.2:
+    resolution:
+      { integrity: sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw== }
+    dev: false
+
   /@rollup/rollup-android-arm-eabi@4.10.0:
     resolution:
       { integrity: sha512-/MeDQmcD96nVoRumKUljsYOLqfv1YFJps+0pTrb2Z9Nl/w5qNUysMaWQsrd1mvAlNT4yza1iVyIu4Q4AgF6V3A== }
@@ -779,6 +787,14 @@ packages:
       escape-string-regexp: 1.0.5
       supports-color: 5.5.0
     dev: true
+
+  /chart.js@4.4.2:
+    resolution:
+      { integrity: sha512-6GD7iKwFpP5kbSD4MeRRRlTnQvxfQREy36uEtm1hzHzcOqwWx0YEHuspuoNlslu+nciLIB7fjjsHkUv/FzFcOg== }
+    engines: { pnpm: '>=8' }
+    dependencies:
+      '@kurkle/color': 0.3.2
+    dev: false
 
   /color-convert@1.9.3:
     resolution:

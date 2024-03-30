@@ -3,7 +3,7 @@ import Chart from 'chart.js/auto';
 
 function PieChart() {
   const chartRef = useRef<HTMLCanvasElement | null>(null);
-  const chartInstance = useRef<Chart<"doughnut", number[], string> | null>(null);
+  const chartInstance = useRef<Chart<'doughnut', number[], string> | null>(null);
 
   useEffect(() => {
     if (chartInstance.current) {
@@ -24,26 +24,23 @@ function PieChart() {
         },
 
         options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins:{
-                legend:{
-                    position:'bottom',
-                    labels:{
-                        color:'#35e0ff',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                color: '#35e0ff',
 
-                        font:{
-                            size:25
-                        },
+                font: {
+                  size: 25,
+                },
 
-                        padding:40,
-                    },
-
-                    
-                }
-            }
-        }
-
+                padding: 40,
+              },
+            },
+          },
+        },
       });
     }
     return () => {
@@ -54,7 +51,7 @@ function PieChart() {
   }, []);
 
   return (
-    <div style={{ width: '50vw', height: '50vh'  }}>
+    <div style={{ width: '50vw', height: '50vh' }}>
       <canvas ref={chartRef} />
     </div>
   );
