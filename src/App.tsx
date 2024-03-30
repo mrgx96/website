@@ -1,4 +1,4 @@
-import '../public/styles.css';
+import './styles.css';
 import Header from './Header';
 import Body from './Body';
 import React from 'react';
