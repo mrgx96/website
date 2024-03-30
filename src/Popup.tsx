@@ -13,9 +13,13 @@ export default function Popup({ onClose }: IPopup) {
           evt.stopPropagation();
           evt.preventDefault();
         }}
+
       >
+        <button className="close-button" onClick={() => onClose?.call(null)}>X</button>
         <h4>P.S. Send ONLY Solana ($SOL) to the following address</h4>
+        <div className="adressContainer">
         <pre className="address">{import.meta.env.VITE_WALLET_ADDRESS}</pre>
+        </div>
         <img
           className="qr-code"
           src={import.meta.env.VITE_WALLET_QR_CODE.replace(/\n/g, '')}

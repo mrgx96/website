@@ -24,7 +24,7 @@ function Body() {
           <h2>Sale ends in</h2>
           <Timer />
           <ProgressCircle />
-          <button type="button" onClick={onOpenModal}>
+          <button className="buyButton" type="button" onClick={onOpenModal}>
             Buy $SOLV
           </button>
           <h3 className="details">Details</h3>

@@ -364,3 +364,38 @@ svg {
   }
 }
 
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #9945ff; 
+}
+
+@media screen and (max-width: 768px) {
+  .buyButton {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+}
+
+.modal {
+  /* Other styles */
+  max-height: 80vh; /* Set maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.address {
+  white-space: pre-wrap; /* Preserve formatting and wrap long addresses */
+}
+
+
+.addressContainer{
+  overflow: auto;
+}
