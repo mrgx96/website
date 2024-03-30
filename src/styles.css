@@ -39,15 +39,61 @@ h1 {
 .header {
   background-color: transparent;
   margin: auto 0;
-  padding: 16px 32px;
+  padding: 16px;
   box-shadow: 0 0 10px 0 rgba(246, 246, 246, 0.9);
   width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   gap: 15px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 1rem;
+  padding-right: 7em;
+}
+
+.header .collapse-button {
+  display: none;
+  line-height: 0;
+  order: 2;
+}
+
+.header .collapse-button svg {
+  width: auto;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1170px) {
+  .header {
+    padding-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header .collapse-button {
+    display: block;
+    order: 0;
+  }
+
+  .header ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
 }
 
 a {
@@ -92,7 +138,7 @@ button {
   align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .bodyContainer {
     width: 100%;
   }
