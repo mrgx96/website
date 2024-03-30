@@ -290,7 +290,7 @@ svg {
 .telegramIcon{
   height: 3rem;
   width: 3rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .telegramIcon:hover{
@@ -302,7 +302,7 @@ svg {
 .xIcon{
   height: 2.5rem;
   width: 2.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .xIcon:hover{
