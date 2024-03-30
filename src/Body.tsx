@@ -48,6 +48,19 @@ function Body() {
           </div>
           </div>
         </div>
+        <div className="contactWrapper">
+          <h2>Contact</h2>
+          <a target="_blank" href="https://t.me/solvationcoin"><img src="../public/Assets/telegram_2111646.png" alt="telegram icon" className="telegramIcon" /></a>
+          <a target="_blank" href="https://twitter.com/SolvationCoin"><img src="../public/Assets/x_logo.png" alt="X icon" className="xIcon" /></a>
+          <div>
+        <img
+        className="logoBottom"
+        src="https://cdn.discordapp.com/attachments/1117557234461847723/1222307219471732816/banner7.png?ex=6615bd4e&is=6603484e&hm=6b9f79ea049da0d124e6f8b56cedfd0a089e36f38674a0e3ce69df8711c29eed&"
+        alt="Logo"
+      />
+      </div>
+      <h3>$SOLV is a meme-based cryptocurrency devoid of intrinsic value and not intended for investment purposes. It functions primarily as a community and cultural token, akin to $Pepe, offering no guarantees or utility, serving purely for entertainment.</h3>
+        </div>
       </div>
     </div>
   );
