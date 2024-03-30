@@ -20,7 +20,7 @@ function Body() {
       <h3 className="pageSubtitle">When your SOL is tired of all the financial burdens, you must seek Solvation</h3>
       <Gif />
       <div className="bodyContainer">
-        <div className="pageBody">
+        <div className="pageBody" id='presale'>
           <h2>Sale ends in</h2>
           <Timer />
           <ProgressCircle />
@@ -43,12 +43,12 @@ function Body() {
             </h4>
           </div>
         </div>
-        <div className="pageBody2">
+        <div className="pageBody2" id='solvenomics'>
           <h2>Solvenomics</h2>
           <h3>Total Supply: 3,333,333,333</h3>
           <PieChart />
         </div>
-        <div className="pageBody2">
+        <div className="pageBody2" id='roadmap'>
           <h2>Roadmap</h2>
           <div className="phaseWrapper">
             <div className="phaseContainer">
@@ -68,7 +68,7 @@ function Body() {
             </div>
           </div>
         </div>
-        <div className="contactWrapper">
+        <div className="contactWrapper" id='contact'>
           <h2>Contact</h2>
           <a target="_blank" href="https://t.me/solvationcoin"><img src="https://cdn.discordapp.com/attachments/1117557234461847723/1223647273255178341/telegram_2111646.png?ex=661a9d54&is=66082854&hm=dbdd675f6f4dddd5d142a4819db37012bd467a2bee88cf62915b0a3271f44b56&" alt="telegram icon" className="telegramIcon" /></a>
           <a target="_blank" href="https://twitter.com/SolvationCoin"><img src="https://cdn.discordapp.com/attachments/1117557234461847723/1223647273007976458/vecteezy_social-media-x-logo-black-and-white-png_36623772.png?ex=661a9d54&is=66082854&hm=b031818aa30cc2046da442bb3a04f48f3f059b199e7abb778f8eab8b4b004c61&" alt="X icon" className="xIcon" /></a>

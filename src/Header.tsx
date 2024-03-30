@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { classNames } from './Common';
+import { Link } from 'react-scroll';
+
 
 function Header() {
   const [collapse, setCollapse] = useState(true);
@@ -34,14 +36,14 @@ function Header() {
         </svg>
       </span>
       <ul className={classNames(collapse ? 'hidden' : '', 'collapse-navigation')}>
-        <li>
-          <a href="">presale</a>
+       <li className='navButton'>
+         <Link to="presale" smooth={true} offset={-50} duration={500}>presale</Link>
+       </li>
+        <li className='navButton'>
+         <Link to="solvenomics" smooth={true} offset={-50} duration={500}>solvenomics</Link>
         </li>
-        <li>
-          <a href="">solvenomics</a>
-        </li>
-        <li>
-          <a href="">roadmap</a>
+        <li className='navButton'>
+         <Link to="roadmap" smooth={true} offset={-50} duration={500}>roadmap</Link>
         </li>
       </ul>
     </h1>

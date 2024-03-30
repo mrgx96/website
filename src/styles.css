@@ -331,7 +331,7 @@ svg {
 }
 
 .overlay-modal .modal {
-  background-color: white;
+  background-color: grey;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -352,4 +352,8 @@ svg {
   height: auto;
   background-color: white;
   padding: 32px;
+}
+
+.navButton{
+  cursor: pointer;
 }
