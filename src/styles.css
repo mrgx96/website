@@ -282,6 +282,44 @@ svg {
   list-style-type: none;
 }
 
+.contactWrapper h2 {
+  font-size: 3rem;
+}
+
+.telegramIcon {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem;
+}
+
+.telegramIcon:hover {
+  height: 3.3rem;
+  width: 3.3rem;
+  transition: ease-in 0.15s;
+}
+
+.xIcon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0.5rem;
+}
+
+.xIcon:hover {
+  height: 3.1rem;
+  width: 3.1rem;
+  transition: ease-in 0.15s;
+}
+
+.logoBottom {
+  width: 19rem;
+  height: 7.5rem;
+}
+
+.footer {
+  font-size: 1rem;
+  margin: 0.4rem;
+}
+
 .overlay-modal {
   position: fixed;
   top: 0;

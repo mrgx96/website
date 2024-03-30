@@ -68,6 +68,19 @@ function Body() {
             </div>
           </div>
         </div>
+        <div className="contactWrapper">
+          <h2>Contact</h2>
+          <a target="_blank" href="https://t.me/solvationcoin"><img src="https://cdn.discordapp.com/attachments/1117557234461847723/1223647273255178341/telegram_2111646.png?ex=661a9d54&is=66082854&hm=dbdd675f6f4dddd5d142a4819db37012bd467a2bee88cf62915b0a3271f44b56&" alt="telegram icon" className="telegramIcon" /></a>
+          <a target="_blank" href="https://twitter.com/SolvationCoin"><img src="https://cdn.discordapp.com/attachments/1117557234461847723/1223647273007976458/vecteezy_social-media-x-logo-black-and-white-png_36623772.png?ex=661a9d54&is=66082854&hm=b031818aa30cc2046da442bb3a04f48f3f059b199e7abb778f8eab8b4b004c61&" alt="X icon" className="xIcon" /></a>
+          <div>
+        <img
+        className="logoBottom"
+        src="https://cdn.discordapp.com/attachments/1117557234461847723/1222307219471732816/banner7.png?ex=6615bd4e&is=6603484e&hm=6b9f79ea049da0d124e6f8b56cedfd0a089e36f38674a0e3ce69df8711c29eed&"
+        alt="Logo"
+      />
+      </div>
+      <h5>$SOLV is a meme-based cryptocurrency devoid of intrinsic value and not intended for investment purposes. It functions primarily as a community and cultural token, akin to $Pepe, offering no guarantees or utility, serving purely for entertainment.</h5>
+        </div>
       </div>
       {popup && <Popup onClose={onCloseModal} />}
     </div>
