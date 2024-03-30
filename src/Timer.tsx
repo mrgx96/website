@@ -9,9 +9,11 @@ function Timer(saleDate) {
 
   useEffect(() => {
     const timerId = setInterval(() => {
-      const saleDate = new Date('2024-04-25 00:00:00').getTime();
+      const saleDateUntil = new Date(import.meta.env.VITE_SALE_DATE_UNTIL).getTime();
+      // const saleDateSince = new Date(import.meta.env.VITE_SALE_DATE_SINCE).getTime();
       const now = new Date().getTime();
-      const distance = saleDate - now;
+      // const distance = saleDateUntil - (now < saleDateSince ? saleDateSince : now);
+      const distance = saleDateUntil - now;
       if (distance > 0) {
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);

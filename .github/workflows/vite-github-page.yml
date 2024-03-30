@@ -51,6 +51,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build
+        env:
+          VITE_SALE_DATE_SINCE: ${{ secrets.VITE_SALE_DATE_SINCE }}
+          VITE_SALE_DATE_UNTIL: ${{ secrets.VITE_SALE_DATE_UNTIL }}
+          VITE_WALLET_ADDRESS: ${{ secrets.VITE_WALLET_ADDRESS }}
+          VITE_WALLET_QR_CODE: ${{ secrets.VITE_WALLET_QR_CODE }}
         run: pnpm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4

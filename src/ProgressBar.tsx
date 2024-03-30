@@ -2,20 +2,28 @@ import React, { useState, useEffect } from 'react';
 import ProgressCircle from './ProgressCircle';
 
 function ProgressBar() {
-  const [progress, setProgress] = useState(1);
-  const intervalHours = 1; // Change this to set the interval in hours
+  const [progress, setProgress] = useState(0);
+  const intervals = 1; // seconds
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (progress < 100) {
-        setProgress(prevProgress => prevProgress + 1);
+      const saleDateSince = new Date(import.meta.env.VITE_SALE_DATE_SINCE).getTime();
+      const saleDateUntil = new Date(import.meta.env.VITE_SALE_DATE_UNTIL).getTime();
+      const now = new Date().getTime();
+      const totalSpan = saleDateUntil - saleDateSince;
+      const timeSpan = now - saleDateSince;
+      if (timeSpan < 0) {
+        setProgress(0);
       } else {
+        setProgress(((timeSpan / totalSpan) * 100) | 0);
+      }
+      if (progress >= 100) {
         clearInterval(interval); // Stop the interval once progress reaches 100%
       }
-    }, intervalHours * 3600000); // Convert hours to milliseconds
+    }, intervals * 1000); // Convert hours to milliseconds
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
-  }, [progress, intervalHours]);
+  }, [progress, intervals]);
 
   return (
     <div className="progressBar">
@@ -25,4 +33,3 @@ function ProgressBar() {
 }
 
 export default ProgressBar;
-

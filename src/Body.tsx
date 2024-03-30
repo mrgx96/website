@@ -1,10 +1,18 @@
-import React from 'react';
-import ProgressCircle from './ProgressBar';
+import { useState } from 'react';
 import Gif from './Gif';
-import Timer from './Timer';
 import PieChart from './PieChart';
+import ProgressCircle from './ProgressBar';
+import React from 'react';
+import Timer from './Timer';
+import Popup from './Popup';
 
 function Body() {
+  const [popup, setPopup] = useState(false);
+
+  const onCloseModal = () => setPopup(false);
+
+  const onOpenModal = () => setPopup(true);
+
   return (
     <div>
       <h1 className="pageTitle">Presale is live</h1>
@@ -16,11 +24,23 @@ function Body() {
           <h2>Sale ends in</h2>
           <Timer />
           <ProgressCircle />
-          <button>Buy $SOLV</button>
+          <button type="button" onClick={onOpenModal}>
+            Buy $SOLV
+          </button>
           <h3 className="details">Details</h3>
           <div className="detailsContent">
-            <h4 className="detailsTitle">Token Distribution <span><p>72 hours after presale ends</p></span></h4>
-            <h4 className="detailsTitle">Token Price<span><p>will be determined by the amount of SOL contributed at the end of the presale</p></span></h4>
+            <h4 className="detailsTitle">
+              Token Distribution{' '}
+              <span>
+                <p>72 hours after presale ends</p>
+              </span>
+            </h4>
+            <h4 className="detailsTitle">
+              Token Price
+              <span>
+                <p>will be determined by the amount of SOL contributed at the end of the presale</p>
+              </span>
+            </h4>
           </div>
         </div>
         <div className="pageBody2">
@@ -31,21 +51,21 @@ function Body() {
         <div className="pageBody2">
           <h2>Roadmap</h2>
           <div className="phaseWrapper">
-          <div className="phaseContainer">
-            <h3>Phase 1</h3>
+            <div className="phaseContainer">
+              <h3>Phase 1</h3>
               <li>Presale Launch</li>
               <li>Presale Conclusion</li>
-          </div>
-          <div className="phaseContainer">
-          <h3>Phase 2</h3>
-            <li>Token Distribution</li>
-            <li>DEX Listing</li>
-          </div>
-          <div className="phaseContainer">
-            <h3>Phase 3</h3>
+            </div>
+            <div className="phaseContainer">
+              <h3>Phase 2</h3>
+              <li>Token Distribution</li>
+              <li>DEX Listing</li>
+            </div>
+            <div className="phaseContainer">
+              <h3>Phase 3</h3>
               <li>Memes & Airdrops</li>
               <li>CEX Listings</li>
-          </div>
+            </div>
           </div>
         </div>
         <div className="contactWrapper">
@@ -62,6 +82,7 @@ function Body() {
       <h5>$SOLV is a meme-based cryptocurrency devoid of intrinsic value and not intended for investment purposes. It functions primarily as a community and cultural token, akin to $Pepe, offering no guarantees or utility, serving purely for entertainment.</h5>
         </div>
       </div>
+      {popup && <Popup onClose={onCloseModal} />}
     </div>
   );
 }
