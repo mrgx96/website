@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
     url('https://cdn.discordapp.com/attachments/1117557234461847723/1222323423598874714/dusiadraws_heaven_and_hell_merging_together_blue_sky_white_clou_2555ed88-a6e4-472c-af27-c972f1af6e88.png?ex=6615cc65&is=66035765&hm=f7311a081bf0c758e02ef5cca786122e086c22ac778a824bc7d935ad87ac63c2&');
@@ -34,13 +38,14 @@ h1 {
 
 .header {
   background-color: transparent;
-  margin: auto -16px;
+  margin: auto 0;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(246, 246, 246, 0.9);
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  gap: 15px;
   justify-content: space-evenly;
   margin-bottom: 1rem;
 }
@@ -59,33 +64,42 @@ button {
 }
 
 .bodyContainer {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 32px;
+  padding: 0 16px 32px;
+  margin: 0 auto;
 }
 
-.pageBody {
-  width: 70%;
+.pageBody,
+.pageBody2 {
   /* height: 40vh; */
   background-color: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0));
   backdrop-filter: blur(8px);
   box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
-  border-radius: 10%;
+  border-radius: 60px;
+  padding: 32px;
+  width: 100%;
 }
 
 .pageBody2 {
-  width: 70%;
-  margin: 1rem;
-  background-color: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0));
-  backdrop-filter: blur(8px);
-  box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
-  border-radius: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .bodyContainer {
+    width: 100%;
+  }
+  .pageBody,
+  .pageBody2 {
+    border-radius: 30px;
+  }
 }
 
 .pageBody button {
@@ -116,13 +130,14 @@ button {
 }
 
 .logo {
-  width: 7em;
-  height: 2.8em;
+  max-width: 7em;
+  max-height: 2.8em;
 }
 
 .gif {
-  width: 30rem;
-  height: 30rem;
+  max-width: 30rem;
+  max-height: 30rem;
+  width: 100%;
   /* box-shadow: 0px 0 100px 0 rgba(246, 246, 246, 0.9); */
   border-radius: 60%;
 }
@@ -168,6 +183,12 @@ svg {
 .countdownContainer p {
   font-size: 2rem;
   margin: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .countdownContainer span {
+    font-size: 1rem;
+  }
 }
 
 .chart {

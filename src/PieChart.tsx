@@ -51,7 +51,7 @@ function PieChart() {
   }, []);
 
   return (
-    <div style={{ width: '50vw', height: '50vh' }}>
+    <div style={{ width: '100%' }}>
       <canvas ref={chartRef} />
     </div>
   );
