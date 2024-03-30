@@ -72,7 +72,7 @@ button {
   background-color: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0));
   backdrop-filter: blur(8px);
   box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
-  border-radius: 10%;
+  border-radius: 60px;
 }
 
 .pageBody2 {
@@ -81,7 +81,7 @@ button {
   background-color: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(225, 225, 225, 0));
   backdrop-filter: blur(8px);
   box-shadow: 0 0 10px 10px rgba(246, 246, 246, 0.4);
-  border-radius: 10%;
+  border-radius: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
