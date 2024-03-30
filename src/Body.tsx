@@ -59,7 +59,7 @@ function Body() {
         alt="Logo"
       />
       </div>
-      <h3>$SOLV is a meme-based cryptocurrency devoid of intrinsic value and not intended for investment purposes. It functions primarily as a community and cultural token, akin to $Pepe, offering no guarantees or utility, serving purely for entertainment.</h3>
+      <h5>$SOLV is a meme-based cryptocurrency devoid of intrinsic value and not intended for investment purposes. It functions primarily as a community and cultural token, akin to $Pepe, offering no guarantees or utility, serving purely for entertainment.</h5>
         </div>
       </div>
     </div>

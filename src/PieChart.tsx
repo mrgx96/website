@@ -36,7 +36,7 @@ function PieChart() {
                   size: function(context) {
                     var width = context.chart.width;
                     var size = Math.round(width / 70); 
-                    return size < 16 ? 16 : size
+                    return size < 12 ? 12 : size
                 },
               },
                 padding: 40,
