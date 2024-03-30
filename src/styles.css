@@ -357,3 +357,10 @@ svg {
 .navButton{
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 90%;
+  }
+}
+
