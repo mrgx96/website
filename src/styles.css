@@ -200,7 +200,7 @@ button {
 }
 
 .tokenPrice {
-  color: whitesmoke;
+  color: #35e0ff;
 }
 
 .circleText {
@@ -211,6 +211,20 @@ button {
   width: 30vw;
   height: 3rem;
   margin-top: 0.5rem;
+}
+
+.detailsContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsContent{
+  color: #876cff;
+}
+
+.detailsContent p{
+  color: #35e0ff;
+  font-size: large;
 }
 
 svg {
@@ -240,4 +254,31 @@ svg {
 .chart {
   width: 1rem;
   height: 1rem;
+}
+
+.phaseWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.phaseContainer{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20rem;
+  height: 20rem;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, #9945FF, #14F195) 1;
+}
+
+.phaseContainer h3{
+  color: #876cff;
+}
+
+
+.phaseContainer li{
+  margin: 3rem;
+  list-style-type: none;
 }

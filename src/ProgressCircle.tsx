@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProgressCircle = ({ progress, circleWidth }) => {
-  const radius = 110;
+  const radius = 160;
   const dashArray = radius * Math.PI * 2;
   const dashOffset = dashArray - (dashArray * progress) / 100;
   return (
@@ -34,9 +34,6 @@ const ProgressCircle = ({ progress, circleWidth }) => {
           {progress}%
         </text>
       </svg>
-      <h4 className="tokenPrice">
-        Token Price: Will be determined by the amount of SOL contributed at the end of the presale
-      </h4>
     </div>
   );
 };

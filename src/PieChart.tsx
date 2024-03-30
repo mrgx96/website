@@ -33,9 +33,12 @@ function PieChart() {
                 color: '#35e0ff',
 
                 font: {
-                  size: 25,
+                  size: function(context) {
+                    var width = context.chart.width;
+                    var size = Math.round(width / 70); 
+                    return size < 16 ? 16 : size
                 },
-
+              },
                 padding: 40,
               },
             },
