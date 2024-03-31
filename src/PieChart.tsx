@@ -14,7 +14,7 @@ function PieChart() {
       chartInstance.current = new Chart(myChartRef, {
         type: 'doughnut',
         data: {
-          labels: ['Presale', 'Development', 'Marketing', 'Community'],
+          labels: ['Presale & Liquidity', 'Development', 'Marketing', 'Community'],
           datasets: [
             {
               data: [70, 10, 10, 10],
