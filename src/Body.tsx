@@ -47,6 +47,7 @@ function Body() {
           <h2>Solvenomics</h2>
           <h3>Total Supply: 3,333,333,333</h3>
           <PieChart />
+          <div className="filler"></div>
         </div>
         <div className="pageBody2" id='roadmap'>
           <h2>Roadmap</h2>
