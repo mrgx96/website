@@ -5,14 +5,13 @@ const ProgressCircle = ({ progress, circleWidth }) => {
   const dashArray = radius * Math.PI * 2;
   const dashOffset = dashArray - (dashArray * progress) / 100;
 
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-const smallerDimension = Math.min(vw, vh);
-const mobileCircleWidth = smallerDimension * 0.9;
-
+  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+  const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+  const smallerDimension = Math.min(vw, vh);
+  const mobileCircleWidth = smallerDimension * 0.9;
 
   return (
-    <div>
+    <div className="progress-circle">
       <svg
         width={vw < 768 ? mobileCircleWidth : circleWidth}
         height={vw < 768 ? mobileCircleWidth : circleWidth}
@@ -50,4 +49,3 @@ const mobileCircleWidth = smallerDimension * 0.9;
 };
 
 export default ProgressCircle;
-
