@@ -393,16 +393,42 @@ svg {
 }
 
 .modal {
-  /* Other styles */
-  max-height: 80vh; /* Set maximum height */
-  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 80vh; 
+  overflow-y: auto;
 }
 
 .address {
-  white-space: pre-wrap; /* Preserve formatting and wrap long addresses */
+  white-space: pre-wrap;
 }
 
 
-.addressContainer{
+
+.addressContainer {
   overflow: auto;
+  display: flex;
+  align-items: center; 
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container input {
+  flex: 1;
+}
+
+.icon-container {
+  width: 32px; 
+  height: 32px; 
+  background-color: #9945ff;
+  color: #14f195;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+  cursor: pointer;
+  margin-left: 10px;
 }
