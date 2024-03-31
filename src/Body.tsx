@@ -68,7 +68,7 @@ function Body() {
               </span>
             </h4>
             <h4 className="detailsTitle">
-              Token Decimals
+              Decimals
               <span>
                 <p>6</p>
               </span>
