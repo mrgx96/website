@@ -136,6 +136,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 50vh;
 }
 
 @media only screen and (max-width: 800px) {
