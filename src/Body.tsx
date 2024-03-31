@@ -36,7 +36,7 @@ function Body() {
               </span>
             </h4>
             <h4 className="detailsTitle">
-              Token Price
+              Token Decimals
               <span>
                 <p>will be determined by the amount of SOL contributed at the end of the presale</p>
               </span>
@@ -47,6 +47,21 @@ function Body() {
           <h2>Solvenomics</h2>
           <h3>Total Supply: 3,333,333,333</h3>
           <PieChart />
+          <h3 className="details">Details</h3>
+          <div className="detailsContent">
+            <h4 className="detailsTitle">
+              Token Address{' '}
+              <span>
+                <p>To be announced</p>
+              </span>
+            </h4>
+            <h4 className="detailsTitle">
+              Token Decimals
+              <span>
+                <p>6</p>
+              </span>
+            </h4>
+          </div>
         </div>
         <div className="pageBody2" id='roadmap'>
           <h2>Roadmap</h2>
