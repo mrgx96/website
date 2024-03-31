@@ -49,6 +49,18 @@ function Body() {
           <PieChart />
           <h3 className="details">Details</h3>
           <div className="detailsContent">
+          <h4 className="detailsTitle">
+              Token Name
+              <span>
+                <p>Solvation</p>
+              </span>
+            </h4>
+            <h4 className="detailsTitle">
+              Token Symbol
+              <span>
+                <p>$SOLV</p>
+              </span>
+            </h4>
             <h4 className="detailsTitle">
               Token Address{' '}
               <span>

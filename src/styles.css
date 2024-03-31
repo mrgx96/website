@@ -436,3 +436,7 @@ button {
   cursor: pointer;
   margin-left: 10px;
 }
+
+.details{
+  margin-top: 3em;
+}

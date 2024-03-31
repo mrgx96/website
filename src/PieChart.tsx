@@ -35,7 +35,7 @@ function PieChart() {
                 font: {
                   size: function(context) {
                     var width = context.chart.width;
-                    var size = Math.round(width / 70); 
+                    var size = Math.round(width / 90); 
                     return size < 12 ? 12 : size
                 },
               },
@@ -54,7 +54,7 @@ function PieChart() {
   }, []);
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '140%' }}>
       <canvas ref={chartRef} />
     </div>
   );
