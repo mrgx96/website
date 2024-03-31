@@ -162,7 +162,7 @@ button {
 @media screen and (max-width: 768px) {
   .pageBody button {
     padding: 8px 16px;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
   }
 }
 
@@ -234,8 +234,14 @@ button {
   font-size: large;
 }
 
-svg {
+.progress-circle svg {
   width: 30vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .progress-circle svg {
+    width: 80%;
+  }
 }
 
 .countdownContainer {
@@ -361,7 +367,7 @@ svg {
   padding: 32px;
 }
 
-.navButton{
+.navButton {
   cursor: pointer;
 }
 
@@ -382,7 +388,7 @@ svg {
 }
 
 .close-button:hover {
-  color: #9945ff; 
+  color: #9945ff;
 }
 
 @media screen and (max-width: 768px) {
@@ -393,7 +399,7 @@ svg {
 }
 
 .modal {
-  max-height: 80vh; 
+  max-height: 80vh;
   overflow-y: auto;
 }
 
@@ -401,12 +407,10 @@ svg {
   white-space: pre-wrap;
 }
 
-
-
 .addressContainer {
   overflow: auto;
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -421,14 +425,14 @@ svg {
 }
 
 .icon-container {
-  width: 32px; 
-  height: 32px; 
+  width: 32px;
+  height: 32px;
   background-color: #9945ff;
   color: #14f195;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%; 
+  border-radius: 50%;
   cursor: pointer;
   margin-left: 10px;
 }
