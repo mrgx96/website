@@ -48,7 +48,7 @@ function Body() {
           <h3>Total Supply: 3,333,333,333</h3>
           <PieChart />
         </div>
-        <div className="pageBody3" id='roadmap'>
+        <div className="pageBody2" id='roadmap'>
           <h2>Roadmap</h2>
           <div className="phaseWrapper">
             <div className="phaseContainer">
