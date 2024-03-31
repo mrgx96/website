@@ -4,9 +4,20 @@ const ProgressCircle = ({ progress, circleWidth }) => {
   const radius = 160;
   const dashArray = radius * Math.PI * 2;
   const dashOffset = dashArray - (dashArray * progress) / 100;
+
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+const smallerDimension = Math.min(vw, vh);
+const mobileCircleWidth = smallerDimension * 0.9;
+
+
   return (
     <div>
-      <svg width={circleWidth} height={circleWidth} viewBox={`0 0 ${circleWidth} ${circleWidth}`}>
+      <svg
+        width={vw < 768 ? mobileCircleWidth : circleWidth}
+        height={vw < 768 ? mobileCircleWidth : circleWidth}
+        viewBox={`0 0 ${circleWidth} ${circleWidth}`}
+      >
         <defs>
           <linearGradient id="gradient">
             <stop offset="50%" stopColor="#14f195" />
@@ -39,3 +50,4 @@ const ProgressCircle = ({ progress, circleWidth }) => {
 };
 
 export default ProgressCircle;
+
