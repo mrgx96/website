@@ -36,9 +36,15 @@ function Body() {
               </span>
             </h4>
             <h4 className="detailsTitle">
-              Token Decimals
+              LP Tokens
               <span>
-                <p>will be determined by the amount of SOL contributed at the end of the presale</p>
+                <p>will be 100% burned</p>
+              </span>
+            </h4>
+            <h4 className="detailsTitle">
+              Taxes
+              <span>
+                <p>How could we tax people for seeking solvation?! It's 0%</p>
               </span>
             </h4>
           </div>
